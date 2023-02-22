@@ -1,11 +1,23 @@
-import "./styles.css";
+import React from "react";
+import {Blog, Footer, Possibility, Features, WhatGPT3, Header} from './containers';
+import {CTA, Brand, Navbar} from './components';
+import './App.css';
 
-export default function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <p>its me mario</p>
+      <div className="gradiant__bg">
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
     </div>
   );
-}
+};
+export default App;
